@@ -8,8 +8,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-30 border-b border-sky-100/80 bg-white/70 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         <NavLink to="/" className="flex items-center gap-2">
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-sky-400 text-white shadow-sm ring-1 ring-black/5">🎫</span>
-          <span className="text-lg font-black tracking-tight text-slate-900">
+          <span className="text-3xl font-black tracking-tight text-slate-900">
             Ticket <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">Hub</span>
           </span>
         </NavLink>
@@ -31,7 +30,7 @@ export default function Navbar() {
 
       {open && (
         <div className="md:hidden">
-          <div className="mx-3 mb-3 rounded-2xl border border-sky-100 bg-white p-2 shadow-lg">
+          <div className="mx-3 mb-3 rounded-2xl border text-xl border-sky-100 bg-white p-2 shadow-lg">
             <NavItem to="/login" full onNavigate={() => setOpen(false)}>Login</NavItem>
             <NavItem to="/create" full onNavigate={() => setOpen(false)}>Create</NavItem>
             <NavItem to="/tickets" full onNavigate={() => setOpen(false)}>Tickets</NavItem>
